@@ -1,0 +1,40 @@
+{
+  "name": "meta-async-validator",
+  "version": "1.0.0",
+  "description": "async validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server --config webpack.config.js --watch --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangshanmeta/meta-async-validator.git"
+  },
+  "keywords": [
+    "async",
+    "validator"
+  ],
+  "author": "jiangshanmeta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiangshanmeta/meta-async-validator/issues"
+  },
+  "homepage": "https://github.com/jiangshanmeta/meta-async-validator#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-set-prototype-of-to-assign": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "vue": "^2.5.10",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.5.10",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
