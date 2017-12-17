@@ -11,9 +11,18 @@ function AsyncValidator(opt){
     this._init(opt);
 }
 
+AsyncValidator.options = {}
+
 let proxy = proxyAsyncValidator(AsyncValidator);
 
-validateMixin(AsyncValidator)
-extendMixin(proxy)
-pluginMixin(proxy)
+validateMixin(AsyncValidator);
+extendMixin(proxy);
+pluginMixin(proxy);
+
+import {transform as typeTransform,plugin as typePlugin} from "./plugins/type.js"
+proxy.plugin('type',typeTransform,typePlugin);
+
+console.log(proxy.options)
+
+
 export default proxy

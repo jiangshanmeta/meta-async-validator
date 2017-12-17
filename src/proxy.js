@@ -1,12 +1,14 @@
 function proxyAsyncValidator(asyncValidator,parent){
     const staticPropertyMethodSet = new Set();
-    staticPropertyMethodSet.children = [];
     if(parent){
         for(let item of parent.proxy){
             console.log(item)
             staticPropertyMethodSet.add(item)
         }
     }
+
+    staticPropertyMethodSet.add('proxy');
+
     return new Proxy(asyncValidator,{
         set(target,key,value,receiver){
             console.log(key);
